@@ -137,6 +137,12 @@
       <Version>5.2.3</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MarkdownConverter\MarkdownConverter.csproj">
+      <Project>{24165250-bbfe-41f4-8580-5e92d5c13102}</Project>
+      <Name>MarkdownConverter</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
