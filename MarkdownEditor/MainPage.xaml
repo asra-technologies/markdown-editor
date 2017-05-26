@@ -7,7 +7,55 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Style.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid x:Name="MainMenu" Background="{ThemeResource SystemControlForegroundAccentBrush}">
+        <!--Grid settings-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <!--UI navbar-->
+
+        <!--<local:UIHeader Grid.ColumnSpan="3" Grid.Row="0" NavBack="False"/>-->
+
+        <!--Main pannels-->
+
+        <StackPanel x:Name="mainPannel" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+            <StackPanel Margin="0,20,0,0" HorizontalAlignment="Center">
+                <TextBlock Margin="0,0,0,15" Text="Markdown Editor" FontWeight="Bold" FontSize="18" Foreground="{ThemeResource SystemControlForegroundAltHighBrush}" />
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <Button x:Name="Encode" Margin="0,10,0,0" Width="auto" Height="40" HorizontalAlignment="Stretch" Style="{ThemeResource AccentButtonStyleDark1}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ouvrir Fichier" Margin="0,0,10,0"/>
+                            <SymbolIcon Symbol="OpenFile"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="Decode" Margin="0,10,0,0" Width="auto" Height="40" HorizontalAlignment="Stretch" Style="{ThemeResource AccentButtonStyleDark1}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ouvrir Dossier" Margin="0,0,10,0" />
+                            <SymbolIcon Symbol="OpenLocal"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+                <TextBlock x:Name="loginError" Margin="0,10,0,0"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!--Bottom row, build info-->
+
+        <TextBlock x:Name="buildPannel" Text="Build " HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 10 5" Grid.Row="2"/>
 
     </Grid>
 </Page>
