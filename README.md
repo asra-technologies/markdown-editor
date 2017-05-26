@@ -12,3 +12,6 @@ Documentation changes should be made on the **docs** branch. This branch should 
 Changes to either git or docs should be merged in the master branch since it is safe to do so. Other branches should then be updated from master to get the latest changes to documentation and git config.
 
 > Github's desktop application does weird stuff with merge and branches. It will merge from remote and not local, therefore if there are changes on a branch that arent pushed, they will not be merged. Sync your remote branch before merging. **The more you know!** Or you could merge using github.com as well.
+
+## Recomended
+It is recomended to use either git or a good git gui program such as GitKraken over the Github desktop application. It seems to be missing a lot of usefull features.

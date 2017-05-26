@@ -22,3 +22,6 @@ This extension allows incrementation of the assembly build info automatically wh
 
 ## Versions
 Rules for versionning are as follows. Major, Minor, Build, Revision. Major should increment when big changes in scope occur, new platform, major feature set. Minor should increment when substantial feature set is added, many features. Build is incremented by release, each feature or group of feature release. Revision should be incremented each time a commit or set of commits is made, *each successfull build worthy of being tested*. Unit tests should follow major, minor and build numbers but their incrementation should follow addition of new tests only.
+
+## Git
+It is recomended to use either git from the command line or a good git GUI application such as gitkraken. The Github desktop application is not ideal and is missing a lot of features.
