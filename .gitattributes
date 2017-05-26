@@ -1,1 +1,4 @@
+## Atributes configuration
+
+# Set git diff mode to csharp source code
 *.cs diff=csharp
