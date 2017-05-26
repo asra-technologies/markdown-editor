@@ -10,6 +10,11 @@ Since Visual Studio 2017 it is much easier to select and install packages for Vi
 * Target pack for .NET 4.6.1
 * Windows 10 SDK 10.0.15063 for UWP (C# version minimum)
 
+In order to deploy the application in developpement, the dev mode must be enabled on windows. If visual studio doesn't asked to activate [follow this guide](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development).
+
+### Important
+The key included in the project MarkdownEditor called MarkdownEditor_TemporaryKey.pfx is important. It's the public private key used to publish the application in devlopement mode. **It should never be replaced**. It might be required to install it on one's computer in order to be able to deploy the application after compiling. **Simply install the certificate**, it does not require a password.
+
 ### Extensions
 
 #### [Automatic Versions](https://marketplace.visualstudio.com/items?itemName=PrecisionInfinity.AutomaticVersions)
